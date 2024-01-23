@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react';
-import { fetchProducts } from './utils';
 import Price from './atoms/Price';
-import Navbar from './components/Navbar';
-import Filter from './components/Filter';
 import { useCart } from './cartContext';
+import Filter from './components/Filter';
+import { fetchProducts } from './utils';
 
 function App() {
   const { cart, addItemToCart, removeItemFromCart, clearCart } = useCart();
